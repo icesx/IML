@@ -13,8 +13,8 @@ def show_data():
     y = iris.iloc[:,1].values
     plt.figure()
     p2 = plt.scatter(x,y,marker='+',color='c',label='2',s=50)
-    plt.xlabel("time(s)")
-    plt.ylabel("value(m)")
+    plt.xlabel("x")
+    plt.ylabel("y")
     plt.title("line")
     plt.show()
 

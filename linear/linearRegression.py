@@ -5,13 +5,9 @@ import matplotlib.pyplot as plt
 
 class Linear():
     def __init__(self):
-        pass
+        print "init linear..."
 
     def cost(self,x,y,theta=np.zeros((2,1))):
-        """Computes the cost of linear regression
-        theta = parameter for linear regression
-        x and y are the data points
-        This is done to monitor the cost of gradient descent"""
         m = len(x)
         J = 1 / (2 * m) * sum((x.dot(theta).flatten() - y) ** 2)
         return J
@@ -28,7 +24,7 @@ class Linear():
                 J.append(self.cost(one_x,one_y,theta))
             print 'Cost: ' + str(J)
             print 'theta:',theta
-            self.scatter_plot(self,all_x,all_y,yp=None,theta=theta,savePng=True,numbers=numbers)
+            self.scatter_plot(all_x,all_y,theta=theta,numbers=numbers)
         return theta
 
     # scatterplot of data with option to save figure.

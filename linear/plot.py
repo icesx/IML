@@ -15,14 +15,14 @@ def show_data():
     p2 = plt.scatter(x,y,marker='+',color='c',label='2',s=50)
     plt.xlabel("x")
     plt.ylabel("y")
-    plt.title("line")
+    plt.title("linear")
     plt.show()
 
 
 def show_line(theta):
     x = np.arange(1,50)
     y = theta * x
-    plt.title("Matplotlib demo")
+    plt.title("show line")
     plt.xlabel("x axis caption")
     plt.ylabel("y axis caption")
     plt.plot(x,y)

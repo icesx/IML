@@ -1,3 +1,7 @@
+# coding:utf-8
+# Copyright (C)
+# Author: I
+# Contact: 12157724@qq.com
 from __future__ import division
 import numpy as np
 import matplotlib.pyplot as plt
@@ -12,22 +16,23 @@ class Linear():
         J = 1 / (2 * m) * sum((x.dot(theta).flatten() - y) ** 2)
         return J
 
-    def gradient_desc(self,all_x,all_y,theta=np.zeros((1,1)),alpha=.01,iterations=10):
+    def gradient_desc(self,all_x,all_y,h0,theta=np.zeros((1,1)),alpha=.01,iterations=10):
         J = []
         for numbers in range(iterations):
             m = all_y.size
             for i in range(m):
                 one_x = np.array([all_x[i]])
                 one_y = np.array([all_y[i]])
-
-                theta[0] = theta[0] - alpha * (1 / m) * sum((one_x.dot(theta).flatten() - one_y) * one_x)
+                # one_x.dot(theta).flatten() 为计算获得的one_y‘
+                #
+                theta[0] = theta[0] - alpha * (1 / m) * sum((h0(one_x,theta) - one_y) * one_x)
+                # must compare cost with befor costed.
                 J.append(self.cost(one_x,one_y,theta))
             print 'Cost: ' + str(J)
             print 'theta:',theta
             self.scatter_plot(all_x,all_y,theta=theta,numbers=numbers)
         return theta
 
-    # scatterplot of data with option to save figure.
     def scatter_plot(self,x,y,theta=0.1,numbers=0):
         plt.xlabel('x')
         plt.ylabel('y')
@@ -43,4 +48,4 @@ if __name__ == '__main__':
     data = np.genfromtxt('ex1data2.txt',delimiter=',')
     all_x = data[:,0]
     all_y = data[:,1]
-    theta = Linear().gradient_desc(all_x,all_y)
+    theta = Linear().gradient_desc(all_x,all_y,lambda one_x,theta: one_x.dot(theta).flatten())

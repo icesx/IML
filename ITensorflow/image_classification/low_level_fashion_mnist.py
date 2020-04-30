@@ -21,21 +21,10 @@ if __name__ == '__main__':
     # definig class name
     class_name = ['top', 'trouser', 'pullover', 'dress', 'coat', 'sandal',
                   'shirt', 'sneaker', 'bag', 'ankle boot']
-
-    # plot image using colorbar
-    plt.figure()
-    plt.imshow(X_train[26])
-    plt.colorbar()
-    plt.show()
     # changing scale 0-255 to 0-1
     X_train = X_train / 255.0
     X_test = X_test / 255.0
 
-    # checking plot image using colorbar again
-    plt.figure()
-    plt.imshow(X_train[26])
-    plt.colorbar()
-    plt.show()
     # building model
     from tensorflow.keras import Sequential
     from tensorflow.keras.layers import Flatten, Dense
@@ -69,9 +58,3 @@ if __name__ == '__main__':
     pred = model.predict(X_test)
     pred[5]
 
-    # plottig with image
-    x = 98
-    plt.figure()
-    plt.imshow(X_test[x])
-    plt.colorbar()
-    np.argmax(pred[x])

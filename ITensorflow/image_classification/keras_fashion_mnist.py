@@ -22,10 +22,6 @@ def load_data():
     print(train_images.shape)
     print(train_labels)
     print(len(test_labels))
-    plt.figure()
-    plt.imshow(train_images[26],cmap=plt.cm.binary)
-    plt.colorbar()
-    plt.show()
     train_images = train_images / 255.0
     test_images = test_images / 255.0
     return train_images, test_images, train_labels, test_labels

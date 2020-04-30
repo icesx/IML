@@ -50,8 +50,8 @@ def run_model(train_images, train_labels, test_images, test_labels):
                   metrics=['accuracy'])
     model.fit(train_images, train_labels, epochs=15)
     test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
-    print('\nTest accuracy:', test_acc)
-    probability_model = tf.keras.Sequential([model,
+    print('Test accuracy:', test_acc)
+    probability_model = keras.Sequential([model,
                                              tf.keras.layers.Softmax()])
     predictions = probability_model.predict(test_images)
     print(predictions[0])

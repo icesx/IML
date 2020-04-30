@@ -21,7 +21,5 @@ if __name__ == '__main__':
                   [17,12,5,11,10,15]])
     _pred = tf.argmax(pred,1)
     _y = tf.argmax(y,1)
-    with tf.Session():
-        print(_pred.eval())
-        print(_y.eval())
-        print(tf.equal(_pred,_y,name=None).eval())
+    print(_pred)
+    print(_y)

@@ -16,7 +16,7 @@ if __name__ == '__main__':
     (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
     # check shape
-    X_train.shape, y_train.shape
+    print(X_train.shape, y_train.shape)
 
     # definig class name
     class_name = ['top', 'trouser', 'pullover', 'dress', 'coat', 'sandal',
@@ -46,15 +46,15 @@ if __name__ == '__main__':
 
     # chechking test_loss, test_acc
     test_loss, test_acc = model.evaluate(X_test, y_test)
-    test_loss, test_acc
+    print(test_loss, test_acc)
 
     # accuracy
     from sklearn.metrics import accuracy_score
 
-    y_pred = model.predict_classes(X_test)
+    y_pred = np.argmax(model.predict(X_test), axis=-1)
     accuracy_score(y_test, y_pred)
 
     # checking pred
     pred = model.predict(X_test)
-    pred[5]
+    print(pred[5])
 

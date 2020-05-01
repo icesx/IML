@@ -5,7 +5,7 @@
 
 import tensorflow as tf
 
-from datasets.load_data import keras_load_data
+from tools.load_data import keras_load_data
 
 if __name__ == '__main__':
     (train_image, train_label), (test_images, test_label) = keras_load_data(tf.keras.datasets.fashion_mnist)

@@ -3,9 +3,9 @@
 # Author: I
 # Contact: 12157724@qq.com
 
-from tensorflow import keras
 import tensorflow as tf
-from datasets.load_data import keras_load_data
+from tools.load_data import keras_load_data
+from tensorflow import keras
 
 
 def load_mnist():
@@ -34,7 +34,19 @@ def predict(module, test_images, test_lables):
     print(test_lables[0], tf.argmax(prediced[0]))
 
 
+def evaluate(module, test_images, test_lables):
+    test_loss, test_acc = module.evaluate(test_images, test_labels, verbose=2)
+    print("testloss=", test_loss, "test_acc=", test_acc)
+
+
+def save(module):
+    from tools.save_module import save_module
+    save_module(module, "../tmp/save/keras_mnist")
+
+
 if __name__ == '__main__':
     train_images, test_images, train_labels, test_labels = load_mnist()
     module = run_module(train_images, train_labels)
+    evaluate(module, test_images, test_labels)
     predict(module, test_images, test_labels)
+    save(module)

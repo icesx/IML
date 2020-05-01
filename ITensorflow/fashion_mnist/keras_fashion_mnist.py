@@ -93,7 +93,7 @@ def plt_redicted(predictions, test_images, test_labels):
     plt.show()
 
 
-from datasets.load_data import keras_load_data
+from tools.load_data import keras_load_data
 
 if __name__ == '__main__':
     train_images, test_images, train_labels, test_labels = keras_load_data(keras.datasets.fashion_mnist)

@@ -6,7 +6,7 @@
 import numpy as np
 from tensorflow import keras
 
-from datasets.load_data import keras_load_data
+from tools.load_data import keras_load_data
 
 if __name__ == '__main__':
     # load data

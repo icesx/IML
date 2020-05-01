@@ -100,7 +100,6 @@ class Dense:
         else:
             return tf.add(tf.matmul(x, self.w), self.b)
 
-
 class Chain:
 
     def __init__(self, layers: List[Iterable[Dense]]) -> None:

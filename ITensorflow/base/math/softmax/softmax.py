@@ -5,7 +5,7 @@
 
 
 def base(z):
-    import math
+    from base import math
     z = [1.0, 2.0, 3.0, 4.0, 1.0, 2.0, 3.0]
     z_exp = [math.exp(i) for i in z]
     print(z_exp)  # Result: [2.72, 7.39, 20.09, 54.6, 2.72, 7.39, 20.09]

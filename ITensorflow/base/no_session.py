@@ -6,8 +6,8 @@
 # tf2 中使用 @tf.function 不需要session
 import tensorflow as tf
 
-W = tf.Variable(tf.ones(shape=(2, 2)), name="W")
-b = tf.Variable(tf.zeros(shape=(2)), name="b")
+W = tf.constant([1.0, 2.0], name="W")
+b = tf.constant([3.0, 4.0], name="b")
 
 
 @tf.function

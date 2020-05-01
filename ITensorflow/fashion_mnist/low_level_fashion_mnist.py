@@ -3,17 +3,14 @@
 # Author: I
 # Contact: 12157724@qq.com
 
-import tensorflow as tf
-from tensorflow import keras
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import datetime
+from tensorflow import keras
+
+from datasets.load_data import keras_load_data
 
 if __name__ == '__main__':
     # load data
-    mnist = keras.datasets.fashion_mnist
-    (X_train, y_train), (X_test, y_test) = mnist.load_data()
+    (X_train, y_train), (X_test, y_test) = keras_load_data(keras.datasets.fashion_mnist)
 
     # check shape
     print(X_train.shape, y_train.shape)
@@ -57,4 +54,3 @@ if __name__ == '__main__':
     # checking pred
     pred = model.predict(X_test)
     print(pred[5])
-

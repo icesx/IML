@@ -16,17 +16,6 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
                'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
 
-def load_data():
-    fashion_mnist = keras.datasets.fashion_mnist
-    (train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
-    print(train_images.shape)
-    print(train_labels)
-    print(len(test_labels))
-    train_images = train_images / 255.0
-    test_images = test_images / 255.0
-    return train_images, test_images, train_labels, test_labels
-
-
 def imange_show(train_images, train_labels):
     plt.figure(figsize=(10, 10))
     for i in range(25):
@@ -52,7 +41,7 @@ def run_model(train_images, train_labels, test_images, test_labels):
     test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
     print('Test accuracy:', test_acc)
     probability_model = keras.Sequential([model,
-                                             tf.keras.layers.Softmax()])
+                                          tf.keras.layers.Softmax()])
     predictions = probability_model.predict(test_images)
     print(predictions[0])
     print(np.argmax(predictions[0]))
@@ -104,7 +93,9 @@ def plt_redicted(predictions, test_images, test_labels):
     plt.show()
 
 
+from datasets.load_data import keras_load_data
+
 if __name__ == '__main__':
-    train_images, test_images, train_labels, test_labels = load_data()
+    train_images, test_images, train_labels, test_labels = keras_load_data(keras.datasets.fashion_mnist)
     imange_show(train_images, train_labels)
-    run_model(train_images,train_labels,test_images,test_labels)
+    run_model(train_images, train_labels, test_images, test_labels)

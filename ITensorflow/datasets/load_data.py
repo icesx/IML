@@ -5,7 +5,7 @@
 
 
 def keras_load_data(dataset):
-    (train_images, train_labels), (test_images, test_labels) = dataset.keras_load_data()
+    (train_images, train_labels), (test_images, test_labels) = dataset.load_data()
     print(train_images.shape)
     print(train_labels)
     print(len(test_labels))

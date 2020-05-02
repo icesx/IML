@@ -5,6 +5,10 @@
 
 
 def keras_load_data(dataset):
+    """
+
+    :type dataset: tensorflow.keras
+    """
     (train_images, train_labels), (test_images, test_labels) = dataset.load_data()
     print(train_images.shape)
     print(train_labels)

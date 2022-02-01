@@ -39,10 +39,10 @@ def evaluete(history, model, test_images, test_labels):
 
 def create_module():
     train_images, test_images, train_labels, test_labels = keras_load_data(keras.datasets.cifar10)
-    verify(train_images,train_labels)
+    verify(train_images, train_labels)
     model = models.Sequential()
-    #Conv2D(32,(3,3)) 32,卷积核的数目（即输出的维度）;(3,3)kernel size,卷积核尺寸
-    #input_shape,32*32*3,x=32,y=32,color=3
+    # Conv2D(32,(3,3)) 32,卷积核的数目（即输出的维度）;(3,3)kernel size,卷积核尺寸
+    # input_shape,32*32*3,x=32,y=32,color=3
     model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)))
     model.add(layers.MaxPooling2D((2, 2)))
     model.add(layers.Conv2D(64, (3, 3), activation='relu'))
@@ -57,7 +57,7 @@ def create_module():
                   metrics=['accuracy'])
     history = model.fit(train_images, train_labels, epochs=10,
                         validation_data=(test_images, test_labels))
-    evaluete(history,model,test_images,test_labels)
+    evaluete(history, model, test_images, test_labels)
 
 
 if __name__ == '__main__':

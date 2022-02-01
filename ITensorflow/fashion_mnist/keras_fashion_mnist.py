@@ -1,11 +1,11 @@
-#!/usr/bin python3
 # coding:utf-8
 # Copyright (C)
 # Author: I
 # Contact: 12157724@qq.com
 # TensorFlow and tf.keras
-
+import matplotlib
 import tensorflow as tf
+from PIL import Image
 from tensorflow import keras
 # Helper libraries
 import numpy as np
@@ -94,8 +94,11 @@ def plt_redicted(predictions, test_images, test_labels):
 
 
 from tools.load_data import keras_load_data
+import numpy
 
 if __name__ == '__main__':
     train_images, test_images, train_labels, test_labels = keras_load_data(keras.datasets.fashion_mnist)
     imange_show(train_images, train_labels)
+    for i, j in zip(train_images, train_labels):
+        matplotlib.pyplot.imsave(str(j)+".jpg",i)
     run_model(train_images, train_labels, test_images, test_labels)

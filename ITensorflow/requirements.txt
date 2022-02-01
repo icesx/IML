@@ -1,8 +1,8 @@
-tensorflow~=2.2.0rc3
-deployer
 numpy~=1.18.3
 six~=1.14.0
 matplotlib~=3.2.1
 pandas~=1.0.3
 sklearn~=0.0
 scikit-learn~=0.22.2.post1
+tensorflow-gpu~=2.4.0
+scipy~=1.5.4

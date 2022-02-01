@@ -3,54 +3,26 @@
 # Author: I
 # Contact: 12157724@qq.com
 
-import numpy as np
-from tensorflow import keras
+import tensorflow as tf
 
 from tools.load_data import keras_load_data
 
 if __name__ == '__main__':
-    # load data
-    (X_train, y_train), (X_test, y_test) = keras_load_data(keras.datasets.fashion_mnist)
+    (train_image, train_label), (test_images, test_label) = keras_load_data(tf.keras.datasets.fashion_mnist)
 
-    # check shape
-    print(X_train.shape, y_train.shape)
-
-    # definig class name
-    class_name = ['top', 'trouser', 'pullover', 'dress', 'coat', 'sandal',
-                  'shirt', 'sneaker', 'bag', 'ankle boot']
-    # changing scale 0-255 to 0-1
-    X_train = X_train / 255.0
-    X_test = X_test / 255.0
-
-    # building model
-    from tensorflow.keras import Sequential
-    from tensorflow.keras.layers import Flatten, Dense
-
-    model = Sequential()
-    # we can pass an array in sequential model or just add another layer
-    model.add(Flatten(input_shape=(28, 28)))
-    # flatten is used to change input data in 1d
-    model.add(Dense(128, activation='relu'))
-    model.add(Dense(10, activation='softmax'))
-    model.summary()
-
-    # compilation of our model
-    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy',
-                  metrics=['accuracy'])
-
-    # fit the model
-    model.fit(X_train, y_train, epochs=2)
-
-    # chechking test_loss, test_acc
-    test_loss, test_acc = model.evaluate(X_test, y_test)
-    print(test_loss, test_acc)
-
-    # accuracy
-    from sklearn.metrics import accuracy_score
-
-    y_pred = np.argmax(model.predict(X_test), axis=-1)
-    accuracy_score(y_test, y_pred)
-
-    # checking pred
-    pred = model.predict(X_test)
-    print(pred[5])
+    # 打印训练数据规模 结果为(60000, 28, 28),代表6w张图片
+    print(train_image.shape)
+    # 引入模型
+    model = tf.keras.Sequential()
+    # 把图像扁平成28*28的向量
+    model.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
+    # 隐藏层
+    model.add(tf.keras.layers.Dense(128, activation='relu'))
+    # 输出层,输出10个概率值,使用softmax把十个输出变成一个概率分布
+    model.add(tf.keras.layers.Dense(10, activation='softmax'))
+    # 编译模型,规定优化方法和损失函数,当标签使用的是数字编码，使用sparse_categorical_crossentropy这个损失函数
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['acc'])
+    # 训练模型，次数为5
+    model.fit(train_image, train_label, epochs=10)
+    # 在测试数据上，对我们的模型进行评价
+    print(model.evaluate(test_images, test_label))

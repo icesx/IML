@@ -1,14 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e5fb3d-27e3-46a4-961a-10dff69eada1" name="Default Changelist" comment="" />
+    <list default="true" id="32e5fb3d-27e3-46a4-961a-10dff69eada1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/mine/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/mine/fashion_classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/mine/mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/mine/text_classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/transfer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/transfer/compiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/transfer/data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/transfer/import_global.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/transfer/test_data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/transfer/test_evalution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ITensorflow/transfer/wrapper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linear/GradientDesc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/ITensorflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/ITensorflow.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/dictionaries/i.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/dictionaries/i.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/base/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/base/argmax.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/base/argmax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/base/math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/base/math/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/base/math/softmax.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/base/math/softmax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/base/no_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/base/no_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/base/shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/base/shape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/cifar_10/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/cifar_10/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/cifar_10/keras_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/cifar_10/keras_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/deploy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/deploy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/fashion_mnist/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/fashion_mnist/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/fashion_mnist/keras_fashion_mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/fashion_mnist/keras_fashion_mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/fashion_mnist/low_level_fashion_mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/fashion_mnist/low_level_fashion_mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/fashion_mnist/low_level_fashion_mnist2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/iris/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/iris/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/iris/low_level_iris.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/iris/low_level_iris.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/mnist/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/mnist/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/mnist/keras_mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/mnist/keras_mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/mnist/load_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/mnist/load_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/plot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/plot/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/plot/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/plot/plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/tensor_board/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/tensor_board/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/tensor_board/mnist_tensor_board.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/tensor_board/mnist_tensor_board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/tools/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/tools/load_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/tools/save_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/tools/save_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflow/tools/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflow/tools/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/androidTest/java/site/taocheng/tensorflow/android/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/androidTest/java/site/taocheng/tensorflow/android/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/assets/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/assets/saved_model.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/cpp/tensorflow/mnist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/cpp/tensorflow/mnist.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/FirstFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/FirstFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/SecondFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/SecondFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/tensorflow/Classifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/tensorflow/Classifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/tensorflow/TensorFlowImageClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/java/site/taocheng/tensorflow/android/tensorflow/TensorFlowImageClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/fragment_first.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/fragment_first.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/fragment_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/layout/fragment_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/test/java/site/taocheng/tensorflow/android/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/app/src/test/java/site/taocheng/tensorflow/android/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ITensorflowAndroid/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ITensorflowAndroid/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ML-Base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML-Base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear/ex1data1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linear/ex1data1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear/ex1data2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linear/ex1data2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear/linearRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear/linearRegression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear/plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/linear/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/logistics/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistics/log_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logistics/log_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistics/logistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/logistics/logistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistics/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/logistics/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistics/test_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/logistics/test_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perceptron/Perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/perceptron/Perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perceptron/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/perceptron/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polynomial/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/polynomial/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polynomial/ML_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/polynomial/ML_0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polynomial/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/polynomial/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polynomial/ml_01_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/polynomial/ml_01_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1bFxQppSiJfGSUznR6ZWQGqGg5Y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,7 +156,37 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RunManager">
+    <configuration name="linearRegression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML-Base" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linear" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linear/linearRegression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.linearRegression" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
